@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutina Full Body 4 Días - Adaptada al Hombro (Móvil)</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; color: #222; }
+  header { background: #1f2937; color: #fff; text-align: center; padding: 1.5rem 1rem; }
+  h1,h2,h3 { color: #111827; }
+  section { max-width: 600px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+  iframe { width: 100%; height: 250px; border: none; border-radius: 8px; margin: 0.5rem 0 1.2rem; }
+  .exercise { margin-bottom: 2rem; }
+  .day-title { background: #2563eb; color: white; padding: 0.5rem 0.8rem; border-radius: 8px; }
+  ul { margin-top: 0.5rem; }
+  .small { font-size: 0.9rem; color: #374151; }
+  label { display: block; margin: 0.3rem 0; }
+  input { width: 60px; margin-left: 0.3rem; }
+  button { margin-top: 0.3rem; padding: 0.3rem 0.6rem; border: none; background: #2563eb; color: white; border-radius: 6px; cursor: pointer; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Rutina Full Body 4 Días - Adaptada al Hombro</h1>
+  <p class="small">Enfocada en pérdida de peso y fortalecimiento sin sobrecargar el hombro. Vídeos de canales confiables.</p>
+</header>
+
+<section>
+  <h2>Calentamiento (10-12 min)</h2>
+  <ul>
+    <li>3 min de cinta o elíptica ligera</li>
+    <li>Movilidad articular: hombros, cuello, codos, caderas</li>
+    <li>Band Pull Apart (goma elástica) - 3x15</li>
+    <li>Elevaciones frontales suaves sin peso - 3x10</li>
+  </ul>
+</section>
+
+<!-- Día 1 -->
+<section>
+  <h2 class="day-title">Día 1 - Fuerza y Control</h2>
+
+  <div class="exercise">
+    <h3>Sentadilla Goblet</h3>
+    <iframe src="https://www.youtube.com/embed/lmRIncjy39o" title="Sentadilla Goblet CuídatePlus"></iframe>
+    <p class="small">Series/Reps: 4x10-12</p>
+    <label>Peso (kg): <input type="number" id="sentadilla-peso"></label>
+    <label>Reps: <input type="number" id="sentadilla-reps"></label>
+    <button onclick="guardarPeso('sentadilla')">Guardar</button>
+    <p id="sentadilla-guardado" class="small"></p>
+  </div>
+
+  <div class="exercise">
+    <h3>Press de Pecho con Mancuernas Neutras</h3>
+    <iframe src="https://www.youtube.com/embed/eozdVDA78K0" title="Dumbbell Bench Press Jeff Nippard"></iframe>
+    <p class="small">Series/Reps: 3x10</p>
+    <label>Peso (kg): <input type="number" id="press-pecho-peso"></label>
+    <label>Reps: <input type="number" id="press-pecho-reps"></label>
+    <button onclick="guardarPeso('press-pecho')">Guardar</button>
+    <p id="press-pecho-guardado" class="small"></p>
+  </div>
+
+  <div class="exercise">
+    <h3>Remo con Mancuerna a una Mano</h3>
+    <iframe src="https://www.youtube.com/embed/pYcpY20QaE8" title="One Arm Dumbbell Row Jeremy Ethier"></iframe>
+    <p class="small">Series/Reps: 4x12</p>
+    <label>Peso (kg): <input type="number" id="remo-peso"></label>
+    <label>Reps: <input type="number" id="remo-reps"></label>
+    <button onclick="guardarPeso('remo')">Guardar</button>
+    <p id="remo-guardado" class="small"></p>
+  </div>
+</section>
+
+<!-- Día 2 -->
+<section>
+  <h2 class="day-title">Día 2 - Metabólico y Core</h2>
+
+  <div class="exercise">
+    <h3>Peso Muerto Rumano con Mancuernas</h3>
+    <iframe src="https://www.youtube.com/embed/2SHsk9AzdjA" title="Romanian Deadlift Jeremy Ethier"></iframe>
+    <p class="small">Series/Reps: 4x12</p>
+    <label>Peso (kg): <input type="number" id="peso-muerto-peso"></label>
+    <label>Reps: <input type="number" id="peso-muerto-reps"></label>
+    <button onclick="guardarPeso('peso-muerto')">Guardar</button>
+    <p id="peso-muerto-guardado" class="small"></p>
+  </div>
+
+  <div class="exercise">
+    <h3>Press Pallof con Banda</h3>
+    <iframe src="https://www.youtube.com/embed/c-byXbLkWzY" title="Press Pallof Jeremy Ethier"></iframe>
+    <p class="small">Series/Reps: 3x15</p>
+    <label>Peso (kg): <input type="number" id="pallof-peso"></label>
+    <label>Reps: <input type="number" id="pallof-reps"></label>
+    <button onclick="guardarPeso('pallof')">Guardar</button>
+    <p id="pallof-guardado" class="small"></p>
+  </div>
+</section>
+
+<!-- Día 3 -->
+<section>
+  <h2 class="day-title">Día 3 - Resistencia y Control</h2>
+
+  <div class="exercise">
+    <h3>Prensa de Piernas</h3>
+    <iframe src="https://www.youtube.com/embed/IZxyjW7MPJQ" title="Leg Press Athlean-X"></iframe>
+    <p class="small">Series/Reps: 4x15</p>
+    <label>Peso (kg): <input type="number" id="prensa-peso"></label>
+    <label>Reps: <input type="number" id="prensa-reps"></label>
+    <button onclick="guardarPeso('prensa')">Guardar</button>
+    <p id="prensa-guardado" class="small"></p>
+  </div>
+
+  <div class="exercise">
+    <h3>Remo en Polea Baja</h3>
+    <iframe src="https://www.youtube.com/embed/GZbfZ033f74" title="Seated Cable Row Jeremy Ethier"></iframe>
+    <p class="small">Series/Reps: 3x12</p>
+    <label>Peso (kg): <input type="number" id="remo-polea-peso"></label>
+    <label>Reps: <input type="number" id="remo-polea-reps"></label>
+    <button onclick="guardarPeso('remo-polea')">Guardar</button>
+    <p id="remo-polea-guardado" class="small"></p>
+  </div>
+</section>
+
+<!-- Día 4 -->
+<section>
+  <h2 class="day-title">Día 4 - Cardio + Estabilidad</h2>
+
+  <div class="exercise">
+    <h3>Cardio: Elíptica o Bici</h3>
+    <iframe src="https://www.youtube.com/embed/V40gK2cR33g" title="Rutina Elíptica 30 min"></iframe>
+    <p class="small">25 min a ritmo medio o 10 min HIIT</p>
+  </div>
+
+  <div class="exercise">
+    <h3>Face Pull con Banda / Polea</h3>
+    <iframe src="https://www.youtube.com/embed/rep-qVOkqgk" title="Face Pull Athlean-X"></iframe>
+    <p class="small">Series/Reps: 3x15</p>
+    <label>Peso (kg): <input type="number" id="facepull-peso"></label>
+    <label>Reps: <input type="number" id="facepull-reps"></label>
+    <button onclick="guardarPeso('facepull')">Guardar</button>
+    <p id="facepull-guardado" class="small"></p>
+  </div>
+
+  <div class="exercise">
+    <h3>Plancha y Puente de Glúteo</h3>
+    <iframe src="https://www.youtube.com/embed/FOE4eoO4nOk" title="Plank & Glute Bridge"></iframe>
+    <p class="small">Plancha 3x30s; puente 3x15</p>
+    <label>Puente - Peso (kg): <input type="number" id="plancha-peso"></label>
+    <label>Reps: <input type="number" id="plancha-reps"></label>
+    <button onclick="guardarPeso('plancha')">Guardar</button>
+    <p id="plancha-guardado" class="small"></p>
+  </div>
+</section>
+
+<section>
+  <h2>Consejos Generales</h2>
+  <ul>
+    <li>Evita movimientos con el brazo por encima de la cabeza hasta superar molestias.</li>
+    <li>Prioriza ejercicios de tirón y rotadores externos si hay sensibilidad.</li>
+    <li>Mantén un déficit calórico moderado (300–500 kcal/día) para perder peso de forma sostenible.</li>
+  </ul>
+</section>
+
+<script>
+function guardarPeso(ejercicio) {
+    const peso = document.getElementById(ejercicio + '-peso')?.value;
+    const reps = document.getElementById(ejercicio + '-reps')?.value;
+
+    if(peso && reps){
+        const registro = {peso: peso, reps: reps};
+        localStorage.setItem(ejercicio, JSON.stringify(registro));
+        document.getElementById(ejercicio + '-guardado').innerText = 
+            `Guardado: ${peso} kg x ${reps} reps`;
+    } else {
+        alert('Introduce peso y repeticiones');
+    }
+}
+
+// Cargar datos guardados al abrir la página
+window.onload = function() {
+    const ejercicios = [
+        'sentadilla','press-pecho','remo','peso-muerto','pallof',
+        'prensa','remo-polea','facepull','plancha'
+    ];
+    ejercicios.forEach(e => {
+        const datos = JSON.parse(localStorage.getItem(e));
+        if(datos){
+            const pesoInput = document.getElementById(e + '-peso');
+            const repsInput = document.getElementById(e + '-reps');
+            const guardado = document.getElementById(e + '-guardado');
+            if(pesoInput) pesoInput.value = datos.peso;
+            if(repsInput) repsInput.value = datos.reps;
+            if(guardado) guardado.innerText = `Guardado: ${datos.peso} kg x ${datos.reps} reps`;
+        }
+    });
+}
+</script>
+</body>
+</html>
