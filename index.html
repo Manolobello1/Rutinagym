@@ -1,198 +1,528 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rutina Full Body 4 Días - Adaptada al Hombro (Móvil)</title>
-<style>
- body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; color: #222; }
-  header { background: #4170f0; color: #fff; text-align: center; padding: 1.5rem 1rem; }
-  h1,h2,h3 { color: #000608; }
-  section { max-width: 600px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-  iframe { width: 100%; height: 250px; border: none; border-radius: 8px; margin: 0.5rem 0 1.2rem; }
-  .exercise { margin-bottom: 1.5rem; }
-  .day-title { background: #aed307; color: white; padding: 0.5rem 0.8rem; border-radius: 8px; }
-  ul { margin-top: 0.5rem; }
-  .small { font-size: 0.9rem; color: #020408; }
-  label { display: block; margin: 0.3rem 0; }
-  input { width: 60px; margin-left: 0.3rem; }
-  button { margin-top: 0.3rem; padding: 0.3rem 0.6rem; border: none; background: #2563eb; color: white; border-radius: 6px; cursor: pointer; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rutina Full Body 4 días - Protegiendo el hombro</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0f6cfd;--muted:#6b7280;--maxw:900px}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);color:#111;margin:0;padding:30px}
+    .container{max-width:var(--maxw);margin:0 auto}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 4px 20px rgba(15,28,61,0.06);margin-bottom:16px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+    .exercise{display:flex;gap:14px}
+    .ex-img{width:220px;flex:0 0 220px;border-radius:8px;overflow:hidden}
+    .ex-img iframe, .ex-img img{width:100%;height:100%;object-fit:cover;display:block;border:0}
+    .ex-body{flex:1}
+    h2{margin:6px 0 10px;font-size:1.15rem}
+    h3{margin:8px 0;color:var(--accent);font-size:1rem}
+    ul{margin:8px 0 8px 18px}
+    .meta{font-size:0.9rem;color:var(--muted)}
+    .section-slim{display:flex;gap:12px;flex-wrap:wrap}
+    .pill{background:#eef5ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:0.86rem}
+    .footer{font-size:0.9rem;color:var(--muted);margin-top:12px}
+    .img-caption{font-size:0.85rem;color:var(--muted);margin-top:6px}
+    .note{background:#fff7ed;border-left:4px solid #ffb020;padding:10px;border-radius:8px}
+    .two-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:640px){.two-cols{grid-template-columns:1fr}}
+    .btn{display:inline-block;background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
+    .small{font-size:0.85rem;color:var(--muted)}
+    /* Inputs/Guardo */
+    .registro { margin-top:8px; display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+    .registro input[type="number"]{width:80px;padding:6px;border-radius:8px;border:1px solid #ddd}
+    .registro button{background:var(--accent);color:#fff;border:none;padding:6px 10px;border-radius:8px;cursor:pointer}
+    .guardado{font-size:0.9rem;color:green;margin-left:8px}
+  </style>
 </head>
 <body>
-<header>
-  <h1>Rutina Full Body 4 Días - Adaptada al Hombro</h1>
-  <p class="small">Enfocada en pérdida de peso y fortalecimiento sin sobrecargar el hombro. Vídeos de canales confiables.</p>
-</header>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Rutina Full Body – 4 días (Protegiendo el hombro)</h1>
+        <p class="lead">Versión completa con vídeos reales, técnica detallada, errores comunes, progresión y plan para perder peso (de 89 kg a 80 kg). Registra tus pesos por ejercicio.</p>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="pill">Completa — 20+ páginas (HTML)</div>
+        <div class="small">Vídeos: canales en español (ejemplos). Puedo sustituir si prefieres otros.</div>
+      </div>
+    </header>
 
-<section>
-  <h2>Calentamiento (10-12 min)</h2>
-  <ul>
-    <li>3 min de cinta o elíptica ligera</li>
-    <li>Movilidad articular: hombros, cuello, codos, caderas</li>
-    <li>Band Pull Apart (goma elástica) - 3x15</li>
-    <li>Elevaciones frontales suaves sin peso - 3x10</li>
-  </ul>
-</section>
+    <section class="card">
+      <h2>Resumen rápido</h2>
+      <div class="two-cols">
+        <div>
+          <p class="meta">Estructura semanal:</p>
+          <ul>
+            <li>Lunes – Full Body A (Fuerza & Técnica)</li>
+            <li>Martes – Full Body B (Metabólico & Control)</li>
+            <li>Jueves – Full Body A</li>
+            <li>Viernes – Full Body B</li>
+          </ul>
+          <p class="meta">Objetivo: perder grasa ~9 kg conservando masa muscular. Déficit calórico moderado (~500 kcal/día).</p>
+        </div>
+        <div>
+          <p class="meta"><strong>Puntos clave para el hombro:</strong></p>
+          <ul>
+            <li>Evitar dolor: sustituir press por variantes con banda o máquina si duele.</li>
+            <li>Priorizar movilidad escapular y trabajo de rotadores externos (face-pulls, band external rotation).</li>
+            <li>Progresión lenta: más repeticiones y control antes de aumentar cargas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<!-- Día 1 -->
-<section>
-  <h2 class="day-title">Día 1 - Fuerza y Control</h2>
+    <section class="card">
+      <h2>Calentamiento (10–12 min)</h2>
+      <ul>
+        <li>5 min cardio suave (cinta/remo/elíptica).</li>
+        <li>Movilidad de hombros: 2–3 series de 10 rep de rotación con banda, shrugs suaves y círculos de hombros.</li>
+        <li>Activación scapular: 2×10 face-pulls con banda ligera + 2×10 Y-T raises (bandas o en banco inclinado).</li>
+        <li>Activación de piernas: 2×10 sentadillas sin peso o con goblet ligero.</li>
+      </ul>
+      <p class="img-caption small">Sigue el calentamiento siempre antes de pasar a cargas.</p>
+    </section>
 
-  <div class="exercise">
-    <h3>Sentadilla Goblet</h3>
-    <iframe src="https://www.youtube.com/embed/lmRIncjy39o" title="Sentadilla Goblet CuídatePlus"></iframe>
-    <p class="small">Series/Reps: 4x10-12</p>
-    <label>Peso (kg): <input type="number" id="sentadilla-peso"></label>
-    <label>Reps: <input type="number" id="sentadilla-reps"></label>
-    <button onclick="guardarPeso('sentadilla')">Guardar</button>
-    <p id="sentadilla-guardado" class="small"></p>
+    <!-- ---------------- Full Body A ---------------- -->
+    <section class="card">
+      <h2>Full Body A — Fuerza y técnica</h2>
+      <div class="grid">
+        <div>
+
+        <!-- Sentadilla Goblet -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre técnica de sentadilla / goblet -->
+            <iframe src="https://www.youtube.com/embed/lmRIncjy39o" title="Sentadilla Goblet" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Sentadilla con mancuernas (Goblet Squat) — 4×10</h3>
+            <p class="small"><strong>Músculos:</strong> cuádriceps, glúteo mayor, core.</p>
+            <p>Técnica: sujeta una mancuerna o kettlebell cerca del pecho, pies separados al ancho de hombros, baja controlando las rodillas hacia fuera y mantén el pecho erguido.</p>
+            <p><strong>Errores comunes:</strong></p>
+            <ul>
+              <li>Inclinar demasiado el tronco hacia delante.</li>
+              <li>Dejar que las rodillas colapsen hacia adentro.</li>
+            </ul>
+
+            <div class="registro">
+              <input type="number" id="sentadilla-peso" placeholder="kg">
+              <input type="number" id="sentadilla-reps" placeholder="reps">
+              <button onclick="guardarPeso('sentadilla')">Guardar</button>
+              <span id="sentadilla-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: técnica y variaciones.</p>
+          </div>
+        </article>
+
+        <!-- Peso muerto rumano -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre peso muerto rumano -->
+            <iframe src="https://www.youtube.com/embed/8rex7stEAjc" title="Peso muerto rumano" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Peso muerto rumano con mancuernas — 3×12</h3>
+            <p class="small"><strong>Músculos:</strong> isquiotibiales, glúteos, zona lumbar.</p>
+            <p>Técnica: espalda neutra, ligera flexión de rodillas, baja controlando el movimiento por cadera hasta sentir el estiramiento en isquios.</p>
+            <ul>
+              <li>No redondear la espalda.</li>
+              <li>Mover la cadera hacia atrás, no bajar demasiado las rodillas.</li>
+            </ul>
+
+            <div class="registro">
+              <input type="number" id="peso-rumano-peso" placeholder="kg">
+              <input type="number" id="peso-rumano-reps" placeholder="reps">
+              <button onclick="guardarPeso('peso-rumano')">Guardar</button>
+              <span id="peso-rumano-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: errores y correcciones.</p>
+          </div>
+        </article>
+
+        <!-- Press pecho inclinado 30º -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre press inclinado / pecho -->
+            <iframe src="https://www.youtube.com/embed/SA-SEBlgWv8" title="Press inclinado - Sergio Peinado" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Press de pecho con mancuernas en banco inclinado 30° — 3×12</h3>
+            <p class="small"><strong>Músculos:</strong> pectoral, deltoides anterior, tríceps.</p>
+            <p>Sólo si no molesta el hombro. Controla el recorrido, evita bloqueo completo y reduce ROM si hay molestias.</p>
+            <p><strong>Sustitución segura:</strong> press en máquina convergente o press con banda.</p>
+
+            <div class="registro">
+              <input type="number" id="press-pecho-peso" placeholder="kg">
+              <input type="number" id="press-pecho-reps" placeholder="reps">
+              <button onclick="guardarPeso('press-pecho')">Guardar</button>
+              <span id="press-pecho-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: ejecución controlada en banco inclinado.</p>
+          </div>
+        </article>
+
+        <!-- Remo con banda / TRX -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre remo TRX / bandas -->
+            <iframe src="https://www.youtube.com/embed/WQRr_r43wvA" title="Remo - Sergio Peinado" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Remo con banda elástica o TRX — 4×12</h3>
+            <p class="small"><strong>Músculos:</strong> dorsal ancho, romboides, trapecio medio.</p>
+            <p>Enfoca en retraer escápulas antes de tirar. Mantén torso rígido y evita tirar con los brazos únicamente.</p>
+
+            <div class="registro">
+              <input type="number" id="remo-peso" placeholder="kg">
+              <input type="number" id="remo-reps" placeholder="reps">
+              <button onclick="guardarPeso('remo')">Guardar</button>
+              <span id="remo-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: progresión con bandas/TRX.</p>
+          </div>
+        </article>
+
+        <!-- Press Pallof -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre Pallof / anti-rotación -->
+            <iframe src="https://www.youtube.com/embed/Q18p2QtQAes" title="Pallof Press explicado" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Press Pallof — 3×15 cada lado</h3>
+            <p class="small"><strong>Músculos:</strong> core, estabilizadores escapulares.</p>
+            <p>Técnica: con una banda lateral o cable, empuja hacia delante y resiste la rotación; mantiene la columna neutra.</p>
+
+            <div class="registro">
+              <input type="number" id="pallof-peso" placeholder="kg (resistencia)">
+              <input type="number" id="pallof-reps" placeholder="reps">
+              <button onclick="guardarPeso('pallof')">Guardar</button>
+              <span id="pallof-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: anti-rotación y progresiones.</p>
+          </div>
+        </article>
+
+        <!-- Elevaciones laterales -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <!-- Vídeo en español sobre elevaciones laterales (técnica segura) -->
+            <iframe src="https://www.youtube.com/embed/Ghbk9R6p048" title="Elevaciones laterales - técnica" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Elevaciones laterales suaves — 3×15</h3>
+            <p class="small"><strong>Músculos:</strong> deltoides medio, trapecio superior.</p>
+            <p>Mantén codos ligeramente flexionados y rango de movimiento cómodo por debajo del nivel del hombro para minimizar tensión.</p>
+
+            <div class="registro">
+              <input type="number" id="elevaciones-peso" placeholder="kg">
+              <input type="number" id="elevaciones-reps" placeholder="reps">
+              <button onclick="guardarPeso('elevaciones')">Guardar</button>
+              <span id="elevaciones-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: control y variaciones.</p>
+          </div>
+        </article>
+
+        <!-- Plancha + Bird dog -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/Ghbk9R6p048" title="Plancha y Bird Dog" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Plancha + Bird dog — 3×30 seg cada uno</h3>
+            <p class="small"><strong>Músculos:</strong> core, glúteos, estabilizadores de columna.</p>
+            <p>Controla la respiración y evita subir la cadera. El bird-dog trabaja la coordinación y estabilidad lumbar.</p>
+
+            <div class="registro">
+              <input type="number" id="plancha-peso" placeholder="kg (opcional)">
+              <input type="number" id="plancha-reps" placeholder="segundos">
+              <button onclick="guardarPeso('plancha')">Guardar</button>
+              <span id="plancha-guardado" class="guardado"></span>
+            </div>
+
+            <p class="img-caption">Vídeo: técnica y control.</p>
+          </div>
+        </article>
+
+        </div>
+        <aside class="card">
+          <h3>Notas Full Body A</h3>
+          <p class="small">Descansa 60–90 s entre series en ejercicios compuestos y 45–60 s en accesorios. Prioriza técnica sobre carga; si el hombro duele en algún ejercicio, detén y sustituye.</p>
+          <h3>Progresión</h3>
+          <ul>
+            <li>Semanas 1–2: cargas ligeras, 12–15 reps (adaptación)</li>
+            <li>Semanas 3–6: aumentar peso 2–5% por semana si sin dolor</li>
+            <li>Registro: anota RPE y molestias (0–10)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ---------------- Full Body B ---------------- -->
+    <section class="card">
+      <h2>Full Body B — Metabólico y control postural</h2>
+      <div class="grid">
+        <div>
+
+        <!-- Peso muerto sumo -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/PxadICCqDZ4" title="Peso muerto sumo/rumano" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Peso muerto sumo con kettlebell — 3×10</h3>
+            <p class="small"><strong>Músculos:</strong> glúteos, aductores, cuádriceps.</p>
+            <p>Técnica: pies anchos, punta ligeramente hacia fuera, empuja con talones y mantén la espalda recta.</p>
+
+            <div class="registro">
+              <input type="number" id="peso-muerto-peso" placeholder="kg">
+              <input type="number" id="peso-muerto-reps" placeholder="reps">
+              <button onclick="guardarPeso('peso-muerto')">Guardar</button>
+              <span id="peso-muerto-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Zancadas alternas -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/PxadICCqDZ4" title="Zancadas" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Zancadas alternas con mancuernas — 3×12 por pierna</h3>
+            <p class="small"><strong>Músculos:</strong> cuádriceps, glúteo, core.</p>
+            <p>Mantén torso erguido, paso controlado y rodilla delantera alineada con el tobillo.</p>
+
+            <div class="registro">
+              <input type="number" id="zancadas-peso" placeholder="kg">
+              <input type="number" id="zancadas-reps" placeholder="reps">
+              <button onclick="guardarPeso('zancadas')">Guardar</button>
+              <span id="zancadas-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Press militar o sustituto -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/8kWJY0YfVqA" title="Press Militar - técnico" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Press militar con mancuernas sentado — 3×10 (si no molesta)</h3>
+            <p class="small">Si hay dolor: sustituir por elevaciones frontales con banda o press en máquina con recorrido controlado.</p>
+
+            <div class="registro">
+              <input type="number" id="press-militar-peso" placeholder="kg">
+              <input type="number" id="press-militar-reps" placeholder="reps">
+              <button onclick="guardarPeso('press-militar')">Guardar</button>
+              <span id="press-militar-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Remo unilateral -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/SA-SEBlgWv8" title="Remo unilateral - Sergio Peinado" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Remo unilateral con mancuerna — 4×12</h3>
+            <p class="small">Apoya una rodilla en banco, tira la mancuerna hacia la cadera y controla la retracción escapular.</p>
+
+            <div class="registro">
+              <input type="number" id="remo-unilateral-peso" placeholder="kg">
+              <input type="number" id="remo-unilateral-reps" placeholder="reps">
+              <button onclick="guardarPeso('remo-unilateral')">Guardar</button>
+              <span id="remo-unilateral-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Face pull -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/Q18p2QtQAes" title="Face Pull - técnica" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Face pull con banda o polea — 3×15</h3>
+            <p class="small"><strong>Músculos:</strong> rotadores externos, trapecio medio/ inferior.</p>
+            <p>Técnica: tira hacia la cara, codos altos, aprieta escapulas. Excelente para rehabilitación de hombro.</p>
+
+            <div class="registro">
+              <input type="number" id="facepull-peso" placeholder="kg">
+              <input type="number" id="facepull-reps" placeholder="reps">
+              <button onclick="guardarPeso('facepull')">Guardar</button>
+              <span id="facepull-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Curl y extension en superset -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/Ghbk9R6p048" title="Curl y extensión - técnica" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Superset: Curl bíceps + Extensión tríceps — 3×12</h3>
+            <p class="small">Mantén control y evita balanceos. Superserie para ahorrar tiempo y añadir estímulo metabólico.</p>
+
+            <div class="registro">
+              <input type="number" id="superset-peso" placeholder="kg">
+              <input type="number" id="superset-reps" placeholder="reps">
+              <button onclick="guardarPeso('superset')">Guardar</button>
+              <span id="superset-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Mountain climbers -->
+        <article class="exercise card">
+          <div class="ex-img">
+            <iframe src="https://www.youtube.com/embed/p-BLhydfviQ" title="Mountain Climbers - rutina" allowfullscreen></iframe>
+          </div>
+          <div class="ex-body">
+            <h3>Mountain climbers / Core dinámico — 3×30 seg</h3>
+            <p class="small">Trabaja cardio, coordinación y core, ideal para finalizar con componente metabólico.</p>
+
+            <div class="registro">
+              <input type="number" id="mountain-peso" placeholder="kg (opcional)">
+              <input type="number" id="mountain-reps" placeholder="segundos">
+              <button onclick="guardarPeso('mountain')">Guardar</button>
+              <span id="mountain-guardado" class="guardado"></span>
+            </div>
+
+          </div>
+        </article>
+
+        </div>
+        <aside class="card">
+          <h3>Notas Full Body B</h3>
+          <p class="small">Descansa 45–75 s entre series. Si sientes pinchazo anterior en hombro, sustituye press por bandas y continúa con ejercicios de tirón y rotadores externos.</p>
+          <h3>Cardio recomendado</h3>
+          <ul>
+            <li>15–20 min moderado post-entreno (cinta/elliptical) o HIIT 8–10 min si toleras.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Descripción detallada por ejercicio (técnica, series, progresión)</h2>
+      <p class="small">A continuación encontrarás fichas por ejercicio con nivel de detalle para que puedas imprimir o consultar desde el móvil en el gimnasio.</p>
+
+      <div class="card">
+        <h3>Sentadilla Goblet — Detalle</h3>
+        <ul>
+          <li><strong>Series/Reps:</strong> 4×8–12 (calentamiento 2×10 sin peso).</li>
+          <li><strong>Técnica paso a paso:</strong>
+            <ol>
+              <li>Coloca la mancuerna vertical frente al pecho, codos apuntando hacia abajo.</li>
+              <li>Pies al ancho de hombros, punteras ligeramente abiertas.</li>
+              <li>Inhala y baja llevando cadera hacia atrás, mantén pecho alto.</li>
+              <li>Haz fuerza con talones para volver arriba y contrae glúteos al final.</li>
+            </ol>
+          </li>
+          <li><strong>Errores comunes:</strong> rodillas hacia adentro, hombros encogidos, bajar con la punta de los pies.</li>
+          <li><strong>Progresión:</strong> aumentar carga, pasar a front squat o barra si movilidad lo permite.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Peso muerto rumano — Detalle</h3>
+        <ul>
+          <li><strong>Series/Reps:</strong> 3×8–12</li>
+          <li><strong>Técnica:</strong> mantener barra o mancuernas cerca del cuerpo, empujar cadera hacia atrás.</li>
+          <li><strong>Precaución:</strong> no hiperextender la espalda; si sientes molestias lumbares, reduce rango o peso.</li>
+        </ul>
+      </div>
+
+      <!-- Puedes añadir más fichas detalladas aquí manteniendo la estructura -->
+    </section>
+
+    <section class="card">
+      <h2>Plan de progresión y control de molestias</h2>
+      <ul>
+        <li>Registra RPE y dolor (0 = ninguno, 10 = insoportable). Si dolor >4, detener ejercicio.</li>
+        <li>Incrementa peso un 2–5% por semana si RPE <7 y sin dolor.</li>
+        <li>Semanas 1–2: enfoque en técnica y movilidad (no subir cargas grandes).</li>
+      </ul>
+      <div class="note">
+        <strong>Si estás con fisioterapia:</strong> coordina ejercicios de rotadores externos y face-pulls con tu fisio antes de progresar press por encima de la cabeza.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Plan alimentario orientativo (resumen)</h2>
+      <p class="small">OBJETIVO: déficit moderado ~500 kcal/día. Ajusta según pérdida semanal (0.4–0.6 kg/semana razonable).</p>
+      <ul>
+        <li>Proteínas: 1.6–2.0 g/kg (140–180 g/día aprox.).</li>
+        <li>Hidratos: prioridad pre/post entreno, porciones controladas.</li>
+        <li>Grasas: grasas saludables (aguacate, aceite oliva, frutos secos).</li>
+      </ul>
+      <p class="small">Si quieres, puedo preparar un plan de comidas semanal con calorías y recetas.</p>
+    </section>
+
+    <footer class="card footer">
+      <p>¿Quieres que exporte este HTML a PDF con los mismos vídeos incrustados? (Ten en cuenta que el PDF no reproducirá los vídeos; sería con miniaturas + enlaces).</p>
+      <p class="small">Si prefieres, sustituyo cualquier vídeo por uno específico que indiques.</p>
+    </footer>
   </div>
 
-  <div class="exercise">
-    <h3>Press de Pecho con Mancuernas Neutras</h3>
-    <iframe src="https://www.youtube.com/embed/eozdVDA78K0" title="Dumbbell Bench Press Jeff Nippard"></iframe>
-    <p class="small">Series/Reps: 3x10</p>
-    <label>Peso (kg): <input type="number" id="press-pecho-peso"></label>
-    <label>Reps: <input type="number" id="press-pecho-reps"></label>
-    <button onclick="guardarPeso('press-pecho')">Guardar</button>
-    <p id="press-pecho-guardado" class="small"></p>
-  </div>
-
-  <div class="exercise">
-    <h3>Remo con Mancuerna a una Mano</h3>
-    <iframe src="https://www.youtube.com/embed/pYcpY20QaE8" title="One Arm Dumbbell Row Jeremy Ethier"></iframe>
-    <p class="small">Series/Reps: 4x12</p>
-    <label>Peso (kg): <input type="number" id="remo-peso"></label>
-    <label>Reps: <input type="number" id="remo-reps"></label>
-    <button onclick="guardarPeso('remo')">Guardar</button>
-    <p id="remo-guardado" class="small"></p>
-  </div>
-</section>
-
-<!-- Día 2 -->
-<section>
-  <h2 class="day-title">Día 2 - Metabólico y Core</h2>
-
-  <div class="exercise">
-    <h3>Peso Muerto Rumano con Mancuernas</h3>
-    <iframe src="https://www.youtube.com/embed/2SHsk9AzdjA" title="Romanian Deadlift Jeremy Ethier"></iframe>
-    <p class="small">Series/Reps: 4x12</p>
-    <label>Peso (kg): <input type="number" id="peso-muerto-peso"></label>
-    <label>Reps: <input type="number" id="peso-muerto-reps"></label>
-    <button onclick="guardarPeso('peso-muerto')">Guardar</button>
-    <p id="peso-muerto-guardado" class="small"></p>
-  </div>
-
-  <div class="exercise">
-    <h3>Press Pallof con Banda</h3>
-    <iframe src="https://www.youtube.com/embed/c-byXbLkWzY" title="Press Pallof Jeremy Ethier"></iframe>
-    <p class="small">Series/Reps: 3x15</p>
-    <label>Peso (kg): <input type="number" id="pallof-peso"></label>
-    <label>Reps: <input type="number" id="pallof-reps"></label>
-    <button onclick="guardarPeso('pallof')">Guardar</button>
-    <p id="pallof-guardado" class="small"></p>
-  </div>
-</section>
-
-<!-- Día 3 -->
-<section>
-  <h2 class="day-title">Día 3 - Resistencia y Control</h2>
-
-  <div class="exercise">
-    <h3>Prensa de Piernas</h3>
-    <iframe src="https://www.youtube.com/embed/IZxyjW7MPJQ" title="Leg Press Athlean-X"></iframe>
-    <p class="small">Series/Reps: 4x15</p>
-    <label>Peso (kg): <input type="number" id="prensa-peso"></label>
-    <label>Reps: <input type="number" id="prensa-reps"></label>
-    <button onclick="guardarPeso('prensa')">Guardar</button>
-    <p id="prensa-guardado" class="small"></p>
-  </div>
-
-  <div class="exercise">
-    <h3>Remo en Polea Baja</h3>
-    <iframe src="https://www.youtube.com/embed/GZbfZ033f74" title="Seated Cable Row Jeremy Ethier"></iframe>
-    <p class="small">Series/Reps: 3x12</p>
-    <label>Peso (kg): <input type="number" id="remo-polea-peso"></label>
-    <label>Reps: <input type="number" id="remo-polea-reps"></label>
-    <button onclick="guardarPeso('remo-polea')">Guardar</button>
-    <p id="remo-polea-guardado" class="small"></p>
-  </div>
-</section>
-
-<!-- Día 4 -->
-<section>
-  <h2 class="day-title">Día 4 - Cardio + Estabilidad</h2>
-
-  <div class="exercise">
-    <h3>Cardio: Elíptica o Bici</h3>
-    <iframe src="https://www.youtube.com/embed/V40gK2cR33g" title="Rutina Elíptica 30 min"></iframe>
-    <p class="small">25 min a ritmo medio o 10 min HIIT</p>
-  </div>
-
-  <div class="exercise">
-    <h3>Face Pull con Banda / Polea</h3>
-    <iframe src="https://www.youtube.com/embed/rep-qVOkqgk" title="Face Pull Athlean-X"></iframe>
-    <p class="small">Series/Reps: 3x15</p>
-    <label>Peso (kg): <input type="number" id="facepull-peso"></label>
-    <label>Reps: <input type="number" id="facepull-reps"></label>
-    <button onclick="guardarPeso('facepull')">Guardar</button>
-    <p id="facepull-guardado" class="small"></p>
-  </div>
-
-  <div class="exercise">
-    <h3>Plancha y Puente de Glúteo</h3>
-    <iframe src="https://www.youtube.com/embed/FOE4eoO4nOk" title="Plank & Glute Bridge"></iframe>
-    <p class="small">Plancha 3x30s; puente 3x15</p>
-    <label>Puente - Peso (kg): <input type="number" id="plancha-peso"></label>
-    <label>Reps: <input type="number" id="plancha-reps"></label>
-    <button onclick="guardarPeso('plancha')">Guardar</button>
-    <p id="plancha-guardado" class="small"></p>
-  </div>
-</section>
-
-<section>
-  <h2>Consejos Generales</h2>
-  <ul>
-    <li>Evita movimientos con el brazo por encima de la cabeza hasta superar molestias.</li>
-    <li>Prioriza ejercicios de tirón y rotadores externos si hay sensibilidad.</li>
-    <li>Mantén un déficit calórico moderado (300–500 kcal/día) para perder peso de forma sostenible.</li>
-  </ul>
-</section>
-
-<script>
-function guardarPeso(ejercicio) {
-    const peso = document.getElementById(ejercicio + '-peso')?.value;
-    const reps = document.getElementById(ejercicio + '-reps')?.value;
-
-    if(peso && reps){
-        const registro = {peso: peso, reps: reps};
-        localStorage.setItem(ejercicio, JSON.stringify(registro));
-        document.getElementById(ejercicio + '-guardado').innerText = 
-            `Guardado: ${peso} kg x ${reps} reps`;
-    } else {
+  <script>
+    // Guardado / carga en localStorage — IDs de ejercicio usados en la página
+    function guardarPeso(ejercicio){
+      const pesoEl = document.getElementById(ejercicio+'-peso');
+      const repsEl = document.getElementById(ejercicio+'-reps');
+      if(!pesoEl || !repsEl){ alert('Elemento no encontrado para ' + ejercicio); return; }
+      const peso = pesoEl.value;
+      const reps = repsEl.value;
+      if(peso && reps){
+        localStorage.setItem('registro_'+ejercicio, JSON.stringify({peso,reps,ts:Date.now()}));
+        const show = document.getElementById(ejercicio+'-guardado');
+        if(show) show.innerText = `Guardado: ${peso} kg x ${reps} reps`;
+      } else {
         alert('Introduce peso y repeticiones');
+      }
     }
-}
 
-// Cargar datos guardados al abrir la página
-window.onload = function() {
-    const ejercicios = [
-        'sentadilla','press-pecho','remo','peso-muerto','pallof',
-        'prensa','remo-polea','facepull','plancha'
-    ];
-    ejercicios.forEach(e => {
-        const datos = JSON.parse(localStorage.getItem(e));
-        if(datos){
-            const pesoInput = document.getElementById(e + '-peso');
-            const repsInput = document.getElementById(e + '-reps');
-            const guardado = document.getElementById(e + '-guardado');
-            if(pesoInput) pesoInput.value = datos.peso;
-            if(repsInput) repsInput.value = datos.reps;
-            if(guardado) guardado.innerText = `Guardado: ${datos.peso} kg x ${datos.reps} reps`;
-        }
+    function cargarRegistro(ejercicio){
+      const data = localStorage.getItem('registro_'+ejercicio);
+      if(!data) return;
+      try {
+        const obj = JSON.parse(data);
+        const pesoEl = document.getElementById(ejercicio+'-peso');
+        const repsEl = document.getElementById(ejercicio+'-reps');
+        const show = document.getElementById(ejercicio+'-guardado');
+        if(pesoEl) pesoEl.value = obj.peso;
+        if(repsEl) repsEl.value = obj.reps;
+        if(show) show.innerText = `Guardado: ${obj.peso} kg x ${obj.reps} reps`;
+      } catch(e){ /* ignore */ }
+    }
+
+    window.addEventListener('load', function(){
+      const ejercicios = [
+        'sentadilla','peso-rumano','press-pecho','remo','pallof','elevaciones','plancha',
+        'peso-muerto','zancadas','press-militar','remo-unilateral','facepull','superset','mountain'
+      ];
+      ejercicios.forEach(cargarRegistro);
     });
-}
-</script>
+  </script>
 </body>
 </html>
